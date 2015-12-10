@@ -1,2 +1,2 @@
 # Python3Bootcamp
-Playground for play a bit with Python 3
+Python 3 boot camp based on [Karel's Python boot camp lecture](http://kubat.nl/pages/lectures)

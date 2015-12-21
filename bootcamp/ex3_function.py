@@ -13,7 +13,7 @@ def cheapest_paperback(mybooks):
         if consumer_price < lowest_price:
             lowest_price = consumer_price
             lowest_price_book = book
-    return {"book": lowest_price_book, "consumer_price": consumer_price}
+    return lowest_price_book, consumer_price
 
 
 books = {'The Hitchhikers Guide to the Galaxy':
@@ -49,6 +49,5 @@ books = {'The Hitchhikers Guide to the Galaxy':
                                           'paperback': {'price': 24.10,
                                                         'shipping': 2.00}}}}
 
-result = cheapest_paperback(books)
-print("%s is the cheapest book priced at %f" %
-      (result['book'], result['consumer_price']))
+book, consumer_price = cheapest_paperback(books)
+print("'%s' is the cheapest book priced at %f" % (book, consumer_price))

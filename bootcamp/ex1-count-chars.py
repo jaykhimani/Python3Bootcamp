@@ -7,9 +7,9 @@ displays the characters (a-z) and their counts. E.g., it should show that there 
 '''
 
 s = "The quick brown fox jumped over the lazy dog"
-s_lower = s.lower();
+s_lower = s.lower()
 
-indx = 0;
+indx = 0
 for c in s_lower:
     if c != " ":
         cntr = 1
@@ -19,6 +19,7 @@ for c in s_lower:
                 cntr += 1
             inner_indx += 1
         isAre = "is"
-        if cntr > 1: isAre = "are"
+        if cntr > 1:
+            isAre = "are"
         print("There %s %d %s" % (isAre, cntr, c))
     indx += 1

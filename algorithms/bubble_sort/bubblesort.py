@@ -14,7 +14,6 @@ def bubble_sort(some_list: list):
     """
     total_sorted = 0
     idx = list_len = len(some_list)
-    total_iter = 0
     while total_sorted < list_len - 1:
         while idx >= 2 + total_sorted:
             num2 = some_list[idx - 1]
@@ -26,9 +25,6 @@ def bubble_sort(some_list: list):
 
         total_sorted += 1
         idx = list_len
-        total_iter += 1
-
-    print("Total iterations %d" % total_iter)
 
 
 my_list = [2, 3, 1, 2, 3, 1, 56, 23, 1, 232, 11, 232, 100, 2, 3, 1, 2, 3, 1, 56, 23, 1, 232, 11, 232, 100]

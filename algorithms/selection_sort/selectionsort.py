@@ -11,7 +11,6 @@ def selection_sort(some_list: list, desc: bool = False):
     :param desc: List is sorted descending if True, else in ascending in order
     :return: None
     """
-    total_iter = 0
     for idx in range(0, len(some_list) - 1):
         current_min = some_list[idx]
         current_idx = idx
@@ -22,12 +21,9 @@ def selection_sort(some_list: list, desc: bool = False):
                 current_min = num
                 swap_idx = current_idx
             current_idx += 1
-            total_iter += 1
         temp = some_list[idx]
         some_list[idx] = current_min
         some_list[swap_idx] = temp
-
-    print("total iteration: %d" % total_iter)
 
 
 numbers = [2, 3, 1, 2, 3, 1, 56, 23, 1, 232, 11, 232, 100, 2, 3, 1, 2, 3, 1, 56, 23, 1, 232, 11, 232, 100]
